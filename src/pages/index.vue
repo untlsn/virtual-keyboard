@@ -52,7 +52,7 @@ const setUppercase = () => {
       <Key class="absolute left-0 bottom-0 w-12" @keydown="setUppercase">
         Shf
       </Key>
-      <Key class="absolute right-0 bottom-0 w-12" @keydown="text = text.slice(0, -1)">
+      <Key class="absolute right-0 bottom-0 w-12" long-click @keydown="text = text.slice(0, -1)">
         {{ '<' }}
       </Key>
       <Key class="absolute right-0 -bottom-13 w-12" @keydown="text += '\n'">
